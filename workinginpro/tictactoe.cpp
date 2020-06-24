@@ -3,6 +3,7 @@
 ///STARTING DAY:22/6/2020
 
 #include<bits/stdc++.h>
+#include<windows.h>
 
 using namespace std;
 
@@ -48,18 +49,24 @@ int main()
 
     ll count=0;
     string p,q;
-    cout<<"WELCOME TO TIC TAC TOE"<<endl;
-    cout<<"PREPARED BY MD SADMAN MEHEDI SIVAN"<<endl<<endl;;
-    cout<<"Type the name of the player 1"<<endl;
+    cout<<"WELCOME TO TIC TAC TOE!"<<endl;
+    cout<<"PREPARED BY MD SADMAN MEHEDI SIVAN.."<<endl<<endl;;
+
+    cout<<"ENTER THE NAME OF THE PLAYER 1:"<<endl;
     cin>>p;
-    cout<<"Type the name of the player 2"<<endl;
+    cout<<endl;
+    cout<<"ENTER THE NAME OF THE PLAYER 2:"<<endl;
     cin>>q;
+    cout<<endl;
 
-
-    cout<<"Who wants to start the game?"<<endl;
-    cout<<"Press 1 for "<<p<<" AND Press 2 for "<<q<<endl;
-    cout<<"Your answer:"<<endl;
+    cout<<"THE GAME WILL BE PLAYED BETWEEN "<<p<<" AND "<<q;
+    cout<<endl;
+    cout<<endl;
+    cout<<"WHO WANTS TO START THE GAME?"<<endl;
+    cout<<"PRESS 1 FOR "<<p<<" AND PRESS 2 FOR "<<q<<endl;
+    cout<<"YOUR ANSWER :"<<endl;
     ll x;
+
 
     ///CHECKING THE RIGHT INPUT
 
@@ -70,12 +77,23 @@ int main()
 
         if(x<1 || x>2)
         {
-            cout<<"Invalid Input!"<<endl<<"Press again-> "<<endl;
+            cout<<"INVALID INPUT!PRESS THE RIGHT BUTTON"<<endl<<"TRY AGAIN-> "<<endl;
             continue;
         }
         else
             break;
     }
+
+    if(x==1)
+        cout<<p<<" WILL START THE GAME"<<endl;
+    else
+        cout<<q<<" WILL START THE GAME"<<endl;
+
+    cout<<"TO INPUT PRESS BUTTON BETWEEN(1-9) AND IF ITS ALREADY TAKEN THEN INPUT SOMETHING DIFFERENT.."<<endl;
+
+    cout<<p<<"'S "<<"OUTPUT WILL BE SHOWN AS 1 AND "<<q<<"'S OUTPUT WILL BE SHOWN AS 2.."<<endl<<endl;
+
+
 
 
     ///MATCH START
@@ -95,7 +113,7 @@ int main()
             if(count==10)
             {
                 print(c);
-                cout<<"The match is Draw!!"<<endl;
+                cout<<"THE MATCH IS DRAW!!"<<endl;
                 return 0;
             }
             cout<<endl;
@@ -104,7 +122,7 @@ int main()
 
             if(count%2==1)
             {
-                cout<<p<<" give your input->"<<endl;
+                cout<<p<<" PRESS YOUR ANSWER:"<<endl;
 
                 ll r;
 
@@ -120,7 +138,7 @@ int main()
 
                     else
                     {
-                        cout<<"Invalid Input!"<<endl<<"Press again-> "<<endl;
+                        cout<<"INVALID INPUT!PRESS THE RIGHT BUTTON"<<endl<<"TRY AGAIN: "<<endl;
                         continue;
                     }
 
@@ -140,7 +158,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][0]==c[1][0] && c[0][0]==c[2][0]) ||(c[0][0]==c[1][1] && c[0][0]==c[2][2]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -154,7 +172,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][1]==c[1][1] && c[0][1]==c[2][1]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -167,7 +185,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][2]==c[1][2] && c[0][2]==c[2][2]) ||(c[0][2]==c[1][1] && c[1][1]==c[2][0]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -180,7 +198,7 @@ int main()
                     if((c[0][0]==c[1][0] && c[0][0] ==c[2][0])||(c[1][0]==c[1][1] && c[1][1]==c[1][2]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
                 }
@@ -192,7 +210,7 @@ int main()
                     if((c[1][1]==c[0][1] && c[2][1] ==c[0][1])||(c[1][0]==c[1][1] && c[1][1]==c[1][2]) ||(c[0][0]==c[1][1] && c[0][0]==c[2][2]) ||(c[0][2]==c[1][1] && c[0][2]==c[2][0]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;;
                         return 0;
                     }
 
@@ -205,7 +223,7 @@ int main()
                     if((c[1][2]==c[0][2] && c[1][2] ==c[2][2])||(c[1][2]==c[1][0] && c[1][1]==c[1][2]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -217,7 +235,7 @@ int main()
                     if((c[2][0]==c[1][0] && c[0][0] ==c[1][0])||(c[2][0]==c[2][1] && c[2][1]==c[2][2]) ||(c[2][0]==c[1][1] && c[1][1]==c[0][2]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -229,7 +247,7 @@ int main()
                     if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[2][1]==c[1][1] && c[1][1]==c[0][1]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
                 }
@@ -242,7 +260,7 @@ int main()
                     if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[0][2]==c[1][2] && c[1][2]==c[2][2]) ||(c[2][2]==c[1][1] && c[0][0]==c[1][1]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -260,12 +278,12 @@ int main()
                 if(count==10)
                 {
                     print(c);
-                    cout<<"The match is Draw!!"<<endl;
+                    cout<<"THE MATCH IS DRAW!!"<<endl;
                     return 0;
                 }
 
 
-                cout<<q<<" give your input"<<endl;
+                cout<<q<<" PRESS YOUR ANSWER :"<<endl;
                 ll r;
 
 
@@ -283,7 +301,7 @@ int main()
 
                     else
                     {
-                        cout<<"Invalid Input!"<<endl<<"Press again-> "<<endl;
+                        cout<<"INVALID INPUT!PRESS THE RIGHT BUTTON"<<endl<<"TRY AGAIN-> "<<endl;
                         continue;
                     }
 
@@ -299,7 +317,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][0]==c[1][0] && c[0][0]==c[2][0]) ||(c[0][0]==c[1][1] && c[0][0]==c[2][2]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -313,7 +331,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][1]==c[1][1] && c[0][1]==c[2][1]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -326,7 +344,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][2]==c[1][2] && c[0][2]==c[2][2]) ||(c[0][2]==c[1][1] && c[1][1]==c[2][0]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -339,7 +357,7 @@ int main()
                     if((c[0][0]==c[1][0] && c[0][0] ==c[2][0])||(c[1][0]==c[1][1] && c[1][1]==c[1][2]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
                 }
@@ -351,7 +369,7 @@ int main()
                     if((c[1][1]==c[0][1] && c[2][1] ==c[0][1])||(c[1][0]==c[1][1] && c[1][1]==c[1][2]) ||(c[0][0]==c[1][1] && c[0][0]==c[2][2]) ||(c[0][2]==c[1][1] && c[0][2]==c[2][0]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -364,7 +382,7 @@ int main()
                     if((c[1][2]==c[0][2] && c[1][2] ==c[2][2])||(c[1][2]==c[1][0] && c[1][1]==c[1][2]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -376,7 +394,7 @@ int main()
                     if((c[2][0]==c[1][0] && c[0][0] ==c[1][0])||(c[2][0]==c[2][1] && c[2][1]==c[2][2]) ||(c[2][0]==c[1][1] && c[1][1]==c[0][2]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -388,7 +406,7 @@ int main()
                     if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[2][1]==c[1][1] && c[1][1]==c[0][1]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
                 }
@@ -401,7 +419,7 @@ int main()
                     if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[0][2]==c[1][2] && c[1][2]==c[2][2]) ||(c[2][2]==c[1][1] && c[0][0]==c[1][1]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -425,7 +443,7 @@ int main()
             if(count==10)
             {
                 print(c);
-                cout<<"The match is Draw!!"<<endl;
+                cout<<"THE MATCH IS DRAW!!"<<endl;
                 return 0;
             }
             ///SECOND PERSON GIVING HIS SHOT
@@ -433,7 +451,7 @@ int main()
             if(count%2==1)
             {
 
-                cout<<"Player "<<q<<" give your input"<<endl;
+                cout<<q<<" PRESS YOUR ANSWER :"<<endl;
                 ll r;
 
 
@@ -451,7 +469,7 @@ int main()
                     }
                     else
                     {
-                        cout<<"Invalid Input"<<endl<<"Press again: "<<endl;
+                        cout<<"INVALID INPUT!PRESS THE RIGHT BUTTON"<<endl<<"TRY AGAIN-> "<<endl;
                         continue;
                     }
 
@@ -467,7 +485,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][0]==c[1][0] && c[0][0]==c[2][0]) ||(c[0][0]==c[1][1] && c[0][0]==c[2][2]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -481,7 +499,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][1]==c[1][1] && c[0][1]==c[2][1]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -494,7 +512,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][2]==c[1][2] && c[0][2]==c[2][2]) ||(c[0][2]==c[1][1] && c[1][1]==c[2][0]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -507,7 +525,7 @@ int main()
                     if((c[0][0]==c[1][0] && c[0][0] ==c[2][0])||(c[1][0]==c[1][1] && c[1][1]==c[1][2]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
                 }
@@ -519,7 +537,7 @@ int main()
                     if((c[1][1]==c[0][1] && c[2][1] ==c[0][1])||(c[1][0]==c[1][1] && c[1][1]==c[1][2]) ||(c[0][0]==c[1][1] && c[0][0]==c[2][2]) ||(c[0][2]==c[1][1] && c[0][2]==c[2][0]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -532,7 +550,7 @@ int main()
                     if((c[1][2]==c[0][2] && c[1][2] ==c[2][2])||(c[1][2]==c[1][0] && c[1][1]==c[1][2]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -544,7 +562,7 @@ int main()
                     if((c[2][0]==c[1][0] && c[0][0] ==c[1][0])||(c[2][0]==c[2][1] && c[2][1]==c[2][2]) ||(c[2][0]==c[1][1] && c[1][1]==c[0][2]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -556,7 +574,7 @@ int main()
                     if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[2][1]==c[1][1] && c[1][1]==c[0][1]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
                 }
@@ -570,7 +588,7 @@ int main()
                     {
 
                         print(c);
-                        cout<<"Congratulations "<<q<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<q<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -584,10 +602,10 @@ int main()
                 if(count==10)
                 {
                     print(c);
-                    cout<<"The match is Draw"<<endl;
+                    cout<<"THE MATCH IS DRAW"<<endl;
                     return 0;
                 }
-                cout<<"Player "<<p<<" give your input"<<endl;
+                cout<<p<<" PRESS YOUR ANSWER"<<endl;
                 ll r;
 
                 print(c);
@@ -603,7 +621,7 @@ int main()
                     }
                     else
                     {
-                        cout<<"Invalid Input"<<endl<<"Press again: "<<endl;
+                        cout<<"INVALID INPUT!PRESS THE RIGHT BUTTON"<<endl<<"TRY AGAIN-> "<<endl;
                         continue;
                     }
 
@@ -619,7 +637,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][0]==c[1][0] && c[0][0]==c[2][0]) ||(c[0][0]==c[1][1] && c[0][0]==c[2][2]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -633,7 +651,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][1]==c[1][1] && c[0][1]==c[2][1]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -646,7 +664,7 @@ int main()
                     if((c[0][0]==c[0][1] && c[0][1] ==c[0][2])||(c[0][2]==c[1][2] && c[0][2]==c[2][2]) ||(c[0][2]==c[1][1] && c[1][1]==c[2][0]))
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
 
@@ -659,7 +677,7 @@ int main()
                     if((c[0][0]==c[1][0] && c[0][0] ==c[2][0])||(c[1][0]==c[1][1] && c[1][1]==c[1][2]) )
                     {
                         print(c);
-                        cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                        cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                         return 0;
                     }
                 }
@@ -673,7 +691,7 @@ int main()
                         for(int i=0; i<3; i++)
                         {
                             print(c);
-                            cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                            cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                             return 0;
                         }
 
@@ -688,7 +706,7 @@ int main()
                             for(int i=0; i<3; i++)
                             {
                                 print(c);
-                                cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                                cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                                 return 0;
                             }
 
@@ -700,7 +718,7 @@ int main()
                             if((c[2][0]==c[1][0] && c[0][0] ==c[1][0])||(c[2][0]==c[2][1] && c[2][1]==c[2][2]) ||(c[2][0]==c[1][1] && c[1][1]==c[0][2]))
                             {
                                 print(c);
-                                cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                                cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                                 return 0;
                             }
 
@@ -712,7 +730,7 @@ int main()
                             if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[2][1]==c[1][1] && c[1][1]==c[0][1]) )
                             {
                                 print(c);
-                                cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                                cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                                 return 0;
                             }
                         }
@@ -724,7 +742,7 @@ int main()
 
                             if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[0][2]==c[1][2] && c[1][2]==c[2][2]) ||(c[2][2]==c[1][1] && c[0][0]==c[1][1]))
                             {
-                                cout<<"Congratulations "<<p<<"!!You won the game!!"<<endl;
+                                cout<<"CONGRATULATIONS "<<p<<"!!YOU WON THE GAME!!"<<endl;
                                 return 0;
                             }
 
