@@ -27,7 +27,7 @@ int main()
 
     ll count=0;
     cout<<"WELCOME TO TIC TAC TOE"<<endl;
-    cout<<"PREPARED BY MD SADMAN MEHEDI SIVAN"<<endl;
+    cout<<"PREPARED BY MD SADMAN MEHEDI SIVAN"<<endl<<endl;;
     cout<<"Who wants to start the game?"<<endl;
     cout<<"Press 1 for Player 1 AND Press 2 for Player 2"<<endl;
     cout<<"Your answer:"<<endl;
@@ -71,21 +71,41 @@ int main()
                     for(int j=0; j<3; j++)
                     {
                         cout<<c [i][j]<<" ";
+                        if(j%3==0 || j%3==1)
+                            cout<<"| ";
                     }
+                    cout<<endl;
+                    if(i%3==0 || i%3==1)
+                    {
+                        cout<<"_   _   _";
+
+                    }
+                    cout<<endl;
                     cout<<endl;
                 }
                 cout<<"The match is Draw!!"<<endl;
                 return 0;
             }
+            cout<<endl;
 
             for(int i=0; i<3; i++)
             {
                 for(int j=0; j<3; j++)
                 {
                     cout<<c [i][j]<<" ";
+                    if(j%3==0 || j%3==1)
+                        cout<<"| ";
                 }
                 cout<<endl;
+                if(i%3==0 || i%3==1)
+                {
+                    cout<<"_   _   _";
+
+                }
+                cout<<endl;
+                cout<<endl;
             }
+
 
             if(count%2==1)
             {
@@ -129,7 +149,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -150,7 +179,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -170,7 +208,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -190,7 +237,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -209,7 +265,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -229,7 +294,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -248,7 +322,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -267,7 +350,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -287,7 +379,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -312,7 +413,16 @@ int main()
                         for(int j=0; j<3; j++)
                         {
                             cout<<c [i][j]<<" ";
+                            if(j%3==0 || j%3==1)
+                                cout<<"| ";
                         }
+                        cout<<endl;
+                        if(i%3==0 || i%3==1)
+                        {
+                            cout<<"_   _   _";
+
+                        }
+                        cout<<endl;
                         cout<<endl;
                     }
                     cout<<"The match is Draw!!"<<endl;
@@ -358,7 +468,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -379,7 +498,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -399,7 +527,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -419,7 +556,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -438,7 +584,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -458,7 +613,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -477,7 +641,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -496,7 +669,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -516,7 +698,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -547,7 +738,16 @@ int main()
                     for(int j=0; j<3; j++)
                     {
                         cout<<c [i][j]<<" ";
+                        if(j%3==0 || j%3==1)
+                            cout<<"| ";
                     }
+                    cout<<endl;
+                    if(i%3==0 || i%3==1)
+                    {
+                        cout<<"_   _   _";
+
+                    }
+                    cout<<endl;
                     cout<<endl;
                 }
                 cout<<"The match is Draw!!"<<endl;
@@ -567,7 +767,16 @@ int main()
                     for(int j=0; j<3; j++)
                     {
                         cout<<c [i][j]<<" ";
+                        if(j%3==0 || j%3==1)
+                            cout<<"| ";
                     }
+                    cout<<endl;
+                    if(i%3==0 || i%3==1)
+                    {
+                        cout<<"_   _   _";
+
+                    }
+                    cout<<endl;
                     cout<<endl;
                 }
 
@@ -603,7 +812,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -624,7 +842,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -644,7 +871,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -664,7 +900,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -683,7 +928,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -703,7 +957,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -722,7 +985,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -741,7 +1013,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -761,7 +1042,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 2!!You won the game!!"<<endl;
@@ -782,7 +1072,16 @@ int main()
                         for(int j=0; j<3; j++)
                         {
                             cout<<c [i][j]<<" ";
+                            if(j%3==0 || j%3==1)
+                                cout<<"| ";
                         }
+                        cout<<endl;
+                        if(i%3==0 || i%3==1)
+                        {
+                            cout<<"_   _   _";
+
+                        }
+                        cout<<endl;
                         cout<<endl;
                     }
                     cout<<"The match is Draw"<<endl;
@@ -791,13 +1090,21 @@ int main()
                 cout<<"Player 1 give your input"<<endl;
                 ll r;
 
-
                 for(int i=0; i<3; i++)
                 {
                     for(int j=0; j<3; j++)
                     {
                         cout<<c [i][j]<<" ";
+                        if(j%3==0 || j%3==1)
+                            cout<<"| ";
                     }
+                    cout<<endl;
+                    if(i%3==0 || i%3==1)
+                    {
+                        cout<<"_   _   _";
+
+                    }
+                    cout<<endl;
                     cout<<endl;
                 }
 
@@ -833,7 +1140,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -854,7 +1170,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -874,7 +1199,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -894,7 +1228,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Player 1 won"<<endl;
@@ -913,7 +1256,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -933,7 +1285,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -952,7 +1313,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -971,7 +1341,16 @@ int main()
                             for(int j=0; j<3; j++)
                             {
                                 cout<<c [i][j]<<" ";
+                                if(j%3==0 || j%3==1)
+                                    cout<<"| ";
                             }
+                            cout<<endl;
+                            if(i%3==0 || i%3==1)
+                            {
+                                cout<<"_   _   _";
+
+                            }
+                            cout<<endl;
                             cout<<endl;
                         }
                         cout<<"Congratulations Player 1!!You won the game!!"<<endl;
@@ -986,10 +1365,18 @@ int main()
                         for(int j=0; j<3; j++)
                         {
                             cout<<c [i][j]<<" ";
+                            if(j%3==0 || j%3==1)
+                                cout<<"| ";
                         }
                         cout<<endl;
-                    }
+                        if(i%3==0 || i%3==1)
+                        {
+                            cout<<"_   _   _";
 
+                        }
+                        cout<<endl;
+                        cout<<endl;
+                    }
                     c[2][2]=1;
 
                     if((c[2][0]==c[2][1] && c[2][1] ==c[2][2])||(c[0][2]==c[1][2] && c[1][2]==c[2][2]) ||(c[2][2]==c[1][1] && c[0][0]==c[1][1]))
